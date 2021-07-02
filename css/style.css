@@ -1,4 +1,5 @@
 /* ======================================  DEFAULT STYLES  ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 html, 
 body {
@@ -9,9 +10,10 @@ body {
 
 body {
     font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(226, 226, 226);
     background: rgb(65, 109, 122);
+    letter-spacing: 1.1px;
 }
 
 img {
@@ -33,13 +35,12 @@ ul li {
 }
 
 #wrapper {
-    width: 1150px;
+    width: 1000px;
     position: relative;
     margin: 0 auto;
 }
 
 header, 
-footer, 
 main {
     padding: 20px;
 }
@@ -72,6 +73,7 @@ article{
 #header {
     background-color: #25509b;
     display: flex;
+    justify-content: space-between;
 }
 
 .header__avatar {
@@ -96,6 +98,8 @@ article{
     text-align: center;
 }
 
+/* ======================================  CONTACTS  ========================================== */
+
 #contacts {
     background-color: #377be2;
     display: flex;
@@ -115,7 +119,48 @@ article{
     text-shadow: 0 0 15px white;
 }
 
+.contacts-align{
+    position: relative;
+    bottom: 20px;
+}
+
+/* ======================================  HOBBIES  ========================================== */
 .hobbies__container{
     display: flex;
     justify-content: space-between;
+}
+
+.hobbies__container h2 {
+    position: relative;
+    top: 30px;
+}
+
+/* ======================================  FOOTER  ========================================== */
+
+footer {
+    background-color: #2169d4;
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+
+.footer__info-continer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    line-height: 80px;
+    font-size: 28px;
+    text-shadow: 0 0 15px white;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: rgb(37, 33, 223);
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.rs-image {
+    position: relative;
+    top: 15px;
 }
