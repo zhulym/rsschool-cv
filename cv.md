@@ -23,6 +23,12 @@ _Here are the skills that already exist and are still learning. And which I also
 
 #
 
+#### My English:
+
+Middle between pre-intermediate and intermediate (A2+ --- B1)
+
+#
+
 #### My Experience:
 
 | Year      | Position       | Company                       |
@@ -30,3 +36,13 @@ _Here are the skills that already exist and are still learning. And which I also
 | 2018-2020 | Team Leader    | Dekkers (Belgium)             |
 | 2014-2015 | Civil Engineer | Belzarubezhstroy (Venesuela)  |
 | 2012-2014 | Civil Engineer | Building trust #3 (Soligorsk) |
+
+#
+
+#### My Hobbies:
+
+- Movies
+- Sport
+- Books
+- Studying
+- Video games
