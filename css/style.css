@@ -1,8 +1,7 @@
 /* ======================================  DEFAULT STYLES  ========================================== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-html, 
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +9,7 @@ body {
 
 body {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(245, 245, 245);
     background: rgb(65, 109, 122);
 }
@@ -25,8 +24,7 @@ a {
     text-decoration: none;
 }
 
-ul, 
-ul li {
+ul, ul li {
     list-style: none;
     display: block;
     margin: 0;
@@ -39,31 +37,30 @@ ul li {
     margin: 0 auto;
 }
 
-header, 
-main {
+header, main {
     padding: 20px;
 }
 
-main{
+main {
     background-color: #dbebfa;
 }
 
-article{
+article {
     border-radius: 15px;
     margin-bottom: 20px;
 }
 
-.main-styles{
-    background-color: #fff; 
-    padding: 20px; 
+.main-styles {
+    background-color: #fff;
+    padding: 20px;
 }
-.main-styles h2, 
-.main-styles h3 {
-    color: #2756A5;
-} 
 
-.main-styles p{
-    color: #6D6766;
+.main-styles h2, .main-styles h3 {
+    color: #2756a5;
+}
+
+.main-styles p {
+    color: #6d6766;
     border-bottom: 1px solid #dbebfa;
     min-width: 47%;
 }
@@ -79,7 +76,8 @@ article{
 .header__avatar {
     margin-right: 20px;
 }
-.header__info{
+
+.header__info {
     margin: 0 auto;
     min-width: 50%;
 }
@@ -109,6 +107,7 @@ article{
 }
 
 /* ======================================  SKILLS  ========================================== */
+
 .info-skills__container {
     display: flex;
     min-width: 100%;
@@ -124,12 +123,11 @@ article{
     transition: all 0.3s ease;
 }
 
-.info-skills__container li:nth-child(2n){
+.info-skills__container li:nth-child(2n) {
     background-color: #377be2;
 }
 
-
-.info-skills__container li:nth-child(2n - 1){
+.info-skills__container li:nth-child(2n - 1) {
     background-color: #306eca;
 }
 
@@ -140,13 +138,14 @@ article{
 }
 
 /* ======================================  ABOUT  ========================================== */
+
 .heading_about {
- color: transparent;
- margin: 0;
- padding: 0;
+    color: transparent;
+    margin: 0;
+    padding: 0;
 }
 
-.about_wrapper{
+.about_wrapper {
     display: flex;
     justify-content: space-between;
 }
@@ -155,7 +154,7 @@ article{
     max-width: 50%;
 }
 
-.about__right{
+.about__right {
     max-width: 50%;
 }
 
@@ -163,14 +162,14 @@ article{
     line-height: 30px;
 }
 
-.about__links a{
-    color: #2756A5;
+.about__links a {
+    color: #2756a5;
     font-style: italic;
     font-weight: 700;
     transition: all 0.3s ease;
 }
 
-.about__links a:hover{
+.about__links a:hover {
     cursor: pointer;
     text-shadow: 0 0 15px white;
     color: rgb(255, 0, 0);
@@ -180,8 +179,8 @@ article{
     padding-bottom: 188px;
 }
 
-
 /* ======================================  CONTACTS  ========================================== */
+
 #contacts {
     background-color: #377be2;
     display: flex;
@@ -189,7 +188,8 @@ article{
     border-radius: 15px;
     padding: 20px;
 }
-.contacts__links{
+
+.contacts__links {
     display: flex;
 }
 
@@ -201,28 +201,31 @@ article{
     text-shadow: 0 0 15px white;
 }
 
-.contacts-align{
+.contacts-align {
     position: relative;
     bottom: 20px;
 }
+
 .contacts-img_styles img:hover {
     transform: scale(1.1);
 }
 
 /* ======================================  HOBBIES  ========================================== */
-.hobbies__container{
+
+.hobbies__container {
     display: flex;
     justify-content: space-between;
 }
 
 /* ======================================  FOOTER  ========================================== */
+
 footer {
     background-color: #2169d4;
     padding: 0 20px 0 20px;
     position: relative;
 }
 
-.footer__info-continer{
+.footer__info-continer {
     display: flex;
     justify-content: space-between;
 }
