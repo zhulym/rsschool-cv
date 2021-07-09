@@ -72,11 +72,15 @@ article{
 #header {
     background-color: #25509b;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .header__avatar {
     margin-right: 20px;
+}
+.header__info{
+    margin: 0 auto;
+    min-width: 50%;
 }
 
 .header__avatar img {
@@ -84,9 +88,14 @@ article{
 }
 
 .header__info h1 {
+    margin-top: 0;
     text-align: center;
     font-size: 36px;
     text-shadow: 0 0 15px white;
+}
+
+.header__info h2 {
+    text-align: center;
 }
 
 .header__info-position {
@@ -96,6 +105,37 @@ article{
     font-weight: 600;
     text-align: center;
 }
+
+.info-skills__container {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.info-skills_styles li {
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.info-skills__container li:nth-child(2n){
+    background-color: #377be2;
+}
+
+
+.info-skills__container li:nth-child(2n - 1){
+    background-color: #306eca;
+}
+
+.info-skills__container li:hover {
+    background-color: #3982ee;
+    text-shadow: 0 0 15px white;
+    box-shadow: 0 0 15px white;
+}
+
+
 
 /* ======================================  CONTACTS  ========================================== */
 
@@ -121,6 +161,9 @@ article{
 .contacts-align{
     position: relative;
     bottom: 20px;
+}
+.contacts-img_styles img:hover {
+    transform: scale(1.1);
 }
 
 /* ======================================  HOBBIES  ========================================== */
