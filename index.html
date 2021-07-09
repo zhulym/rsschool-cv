@@ -13,14 +13,40 @@
     <div id="wrapper">
         <header id="header">
             <div class="header__avatar">
-                <img src="images/avatar.jpg" alt="">
+                <img src="images/avatar.jpg" alt="avatar">
             </div>
             <div class="header__info">
-                <h1>Zhulym Sergey</h1>
+                <h1><a href="https://vk.com/llllwolfllll">Zhulym Sergey</a></h1>
                 <div class="header__info-position">JUNIOR FRONTEND DEVELOPER</div>
                 <div class="header__info-skills">
-                    <p>HTML/CSS | JS | React&Redux | Node JS | Bootstrap5 | Flex/Grid |</p>
-                    <p> SCSS/Less | Git/Github | Photoshop/Figma | React Native | Webpack/Gulp</p>
+                    <h2>Skills</h2>
+                    <div class="info-skills__container">
+                        <div class="info-skills__content info-skills_styles">
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>JS</li>
+                                <li>React&Redux</li>
+                                <li>Node JS</li>
+                            </ul>
+                        </div>
+                        <div class="info-skills__content info-skills_styles">
+                            <ul>
+                                <li>SCSS/LESS</li>
+                                <li>Git/Github</li>
+                                <li>Photoshop/Figma</li>
+                                <li>Webpack/Gulp</li>
+
+                            </ul>
+                        </div>
+                        <div class="info-skills__content info-skills_styles">
+                            <ul>
+                                <li>React Native</li>
+                                <li>Bootstrap5</li>
+                                <li>Flex/Grid</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -28,15 +54,15 @@
         <main id="main">
             <article id="contacts">
                 <h2>CONTACTS</h2>
-                <div class="contacts__phone">
+                <div class="contacts__phone contacts-img_styles">
                     <span><img src="images/phone.png" alt="phone"></span>
                     <span class="contacts__info contacts-align">+375(29)203-78-07</span>
                 </div>
-                <div class="contacts__email">
+                <div class="contacts__email contacts-img_styles">
                     <span><img src="images/email.png" alt="email"></span>
                     <span class="contacts__info contacts-align">Zhulym@mail.ru</span>
                 </div>
-                <div class="contacts__links">
+                <div class="contacts__links contacts-img_styles">
                     <div><img src="images/links.png" alt="links"></div>
                     <div class="contacts__info">
                         <ul>
@@ -46,46 +72,80 @@
                         </ul>
                     </div>
                 </div>
-                <div class="contacts__location">
+                <div class="contacts__location contacts-img_styles">
                     <span><img src="images/location.png" alt="location"></span>
                     <span class="contacts__info contacts-align">Minsk</span>
                 </div>
             </article>
 
-            <article id="experience" class="main-styles">
-                <h2>EXPERIENCE</h2>
-                <div class="experience__container">
-                    <div class="experience__item">
-                        <h3>TEAM LEADER (2018-2020)</h3>
-                        <p>Dekkers (Belgium)</p>
+            <section id="about">
+                <h2 class="heading_about">ABOUT</h2>
+                <div class="about_wrapper">
+                    <div class="about__left">
+
+                        <article id="experience" class="main-styles">
+                            <h2>EXPERIENCE</h2>
+                            <div class="experience__container">
+                                <div class="experience__item">
+                                    <h3>TEAM LEADER (2018-2020)</h3>
+                                    <p>Dekkers (Belgium)</p>
+                                </div>
+                                <div class="experience__item">
+                                    <h3>CIVIL ENGINEER (2014-2015)</h3>
+                                    <p>Belzarubezhstroy (Venesuela)</p>
+                                </div>
+                                <div class="experience__item">
+                                    <h3>CIVIL ENGINEER (2012-2014)</h3>
+                                    <p>Building trust #3 (Soligorsk)</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="education" class="main-styles">
+                            <h2>EDUCATION</h2>
+                            <div class="education__container">
+                                <div class="education__item">
+                                    <h3>Brest State Technical University</h3>
+                                    <p>2007-2012</p>
+                                    <p>Civil Engineer</p>
+                                </div>
+
+                                <div class="education__item">
+                                    <h3>EnglishPapa</h3>
+                                    <p>2021</p>
+                                    <p>A2 - B1 (middle between pre-intermediate and intermediate)</p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <div class="experience__item">
-                        <h3>CIVIL ENGINEER (2014-2015)</h3>
-                        <p>Belzarubezhstroy (Venesuela)</p>
-                    </div>
-                    <div class="experience__item">
-                        <h3>CIVIL ENGINEER (2012-2014)</h3>
-                        <p>Building trust #3 (Soligorsk)</p>
+
+                    <div class="about__right">
+                        <article id="about__info" class="main-styles">
+                            <h2>ABOUT ME</h2>
+                            <div class="about_container">
+                                <p class="about__content">
+                                    I am Sergey Zhulym, graduated from full-time studies at the
+                                    <strong> Brest State Technical University</strong> in
+                                    2012. For six years I worked as an engineer of industrial and civil construction in
+                                    Belarus, Venezuela and Belgium.
+                                </p>
+                                <p class="about__content">
+                                    Since 2020, I have been interested and studying
+                                    frontend development. At the moment, I am studying at the Rolling Scopes School and
+                                    at the
+                                    EnglishPapa School of <strong>English (at the A2-B1 level)</strong>.
+                                </p>
+                                <p class="about__content"><strong>My projects and some links below:</strong></p>
+
+                                <p class="about__links"><a href="https://github.com/zhulym">GITHUB</a></p>
+                                <p class="about__links"><a
+                                        href="https://www.linkedin.com/in/sergey-zhulym/">LINKEDIN</a></p>
+                                <p class="about__links"><a href="https://www.codewars.com/users/zhulym">CODEWARS</a></p>
+                            </div>
+                        </article>
                     </div>
                 </div>
-            </article>
-
-            <article id="education" class="main-styles">
-                <h2>EDUCATION</h2>
-                <div class="education__container">
-                    <div class="education__item">
-                        <h3>Brest State Technical University</h3>
-                        <p>2007-2012</p>
-                        <p>Civil Engineer</p>
-                    </div>
-
-                    <div class="education__item">
-                        <h3>EnglishPapa</h3>
-                        <p>2021</p>
-                        <p>B1 (middle between pre-intermediate and intermediate)</p>
-                    </div>
-                </div>
-            </article>
+            </section>
 
             <article id="hobbies" class="main-styles">
                 <h2>HOBBIES</h2>
