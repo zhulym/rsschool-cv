@@ -123,6 +123,10 @@ article {
     transition: all 0.3s ease;
 }
 
+.info-skills_styles li:hover {
+    cursor: pointer;
+}
+
 .info-skills__container li:nth-child(2n) {
     background-color: #377be2;
 }
@@ -208,6 +212,7 @@ article {
 
 .contacts-img_styles img:hover {
     transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 /* ======================================  HOBBIES  ========================================== */
@@ -235,6 +240,7 @@ footer a {
     font-size: 28px;
     text-shadow: 0 0 15px white;
     font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 footer a:hover {
