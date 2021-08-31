@@ -11,7 +11,7 @@ body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     color: rgb(245, 245, 245);
-    background: rgb(65, 109, 122);
+    background: #374151;
 }
 
 img {
@@ -20,7 +20,7 @@ img {
 }
 
 a {
-    color: rgb(226, 226, 226);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ header, main {
 }
 
 main {
-    background-color: #dbebfa;
+    background-color: #ffffff;
 }
 
 article {
@@ -56,7 +56,7 @@ article {
 }
 
 .main-styles h2, .main-styles h3 {
-    color: #2756a5;
+    color: #3958A3;
 }
 
 .main-styles p {
@@ -68,7 +68,7 @@ article {
 /* ======================================  HEADER  ========================================== */
 
 #header {
-    background-color: #25509b;
+    background-color: #3958A3;
     display: flex;
     /* justify-content: space-between; */
 }
@@ -99,7 +99,7 @@ article {
 }
 
 .header__info-position {
-    background-color: #2169d4;
+    background-color: #3958A3;
     padding: 15px;
     border-radius: 30px;
     font-weight: 600;
@@ -186,7 +186,7 @@ article {
 /* ======================================  CONTACTS  ========================================== */
 
 #contacts {
-    background-color: #377be2;
+    background-color: #0DC8EF;
     display: flex;
     justify-content: space-around;
     border-radius: 15px;
@@ -225,7 +225,7 @@ article {
 /* ======================================  FOOTER  ========================================== */
 
 footer {
-    background-color: #2169d4;
+    background-color: #3958A3;
     padding: 0 20px 0 20px;
     position: relative;
 }
@@ -237,6 +237,7 @@ footer {
 
 footer a {
     line-height: 80px;
+    font-style: italic;
     font-size: 28px;
     text-shadow: 0 0 15px white;
     font-weight: 700;
@@ -244,8 +245,8 @@ footer a {
 }
 
 footer a:hover {
-    color: rgb(37, 33, 223);
-    text-shadow: 0 0 15px rgb(255, 255, 255);
+    color: rgb(139, 139, 167);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 .rs-image {
