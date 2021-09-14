@@ -1,6 +1,7 @@
 /*=======================================  FONTS  ====================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 /*=======================================  CONSTANTS  ================================================*/
+/*=======================================  MIXINS  ===================================================*/
 /*=======================================  IMPORT SCSS  ==============================================*/
 /* ======================================  HEADER  ========================================== */
 .header__logo {
@@ -33,14 +34,23 @@
 .header::after {
   content: "";
   width: calc(100% - 40px);
-  margin: 10px auto;
+  margin: 0px auto;
+  margin-bottom: 5px;
   border-top: 1px solid #858585;
   display: block;
 }
 
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__menu {
   text-shadow: 0 0 15px #fff;
-  padding-top: 40px;
   padding-right: 20px;
 }
 
@@ -459,6 +469,16 @@ footer a:hover {
 }
 
 /* ======================================  Media Queries  ========================================== */
+@media only screen and (max-width: 1024px) {
+  .header,
+  .header__info-wrapper,
+  .main,
+  .footer {
+    width: 970px;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .header,
   .header__info-wrapper,
@@ -576,7 +596,7 @@ footer a:hover {
     left: -250%;
     width: 100%;
     height: 100vh;
-    background-color: rgba(26, 26, 26, 0.9);
+    background-color: rgba(20, 25, 29, 0.9);
     padding: 100px 0;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
@@ -719,12 +739,21 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
 body {
+  position: relative;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #0dcaf0;
   background: url(../images/back.jpg) no-repeat center center fixed;
   background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {

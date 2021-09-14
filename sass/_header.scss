@@ -21,14 +21,19 @@
 .header::after {
   content: "";
   width: calc(100% - 40px);
-  margin: 10px auto;
+  margin: 0px auto;
+  margin-bottom: 5px;
   border-top: 1px solid rgb(133, 133, 133);
   display: block;
+}
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .header__menu {
   text-shadow: 0 0 15px #fff;
-  padding-top: 40px;
+  // padding-top: 30px;
   padding-right: 20px;
   ul {
     display: flex;
@@ -36,26 +41,7 @@
     li {
       position: relative;
       a {
-        font-family: Helvetica, arial, serif;
-        text-align: center;
-        cursor: pointer;
-        text-decoration: none;
-        padding: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        border-bottom: 3px solid rgba(0, 0, 0, 0.5);
-        border-radius: 3px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-          inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
-          inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-        border-radius: 3px;
-        transition: all 0.3s ease 0s;
-        position: relative;
-        &:hover {
-          opacity: 0.8;
-        }
-        &:active {
-          top: 1px;
-        }
+        @include mainButton();
       }
     }
   }
@@ -110,23 +96,5 @@
 
 .header__download {
   margin-top: 20px;
-  font-family: Helvetica, arial, serif;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
-  border-radius: 3px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
-  transition: all 0.3s ease 0s;
-  position: relative;
-  &:hover {
-    opacity: 0.8;
-  }
-  &:active {
-    top: 1px;
-  }
+  @include mainButton();
 }
