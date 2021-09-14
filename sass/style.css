@@ -270,6 +270,10 @@
           transform: scale(1.01);
 }
 
+.projects-item p {
+  font-size: 14px !important;
+}
+
 .projects-image img {
   width: 100%;
   height: 100%;
@@ -306,18 +310,23 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
 }
 
 .about__left {
-  max-width: 50%;
+  max-width: 35%;
 }
 
 .about__right {
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .about__content {
   line-height: 30px;
+}
+
+#about__code {
+  padding: 10px 20px;
 }
 
 .about__links a {
@@ -357,6 +366,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 50px;
+  margin-top: 20px;
 }
 
 .hobbies__title {
@@ -513,6 +523,12 @@ footer a:hover {
     width: 560px;
     margin: 0 auto;
   }
+  .about__left {
+    max-width: 45%;
+  }
+  .about__right {
+    max-width: 55%;
+  }
   .header__menu ul {
     gap: 5px;
   }
@@ -527,7 +543,7 @@ footer a:hover {
     z-index: 5;
     display: block;
     position: relative;
-    top: 50%;
+    top: 20%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     left: -20px;
@@ -787,7 +803,7 @@ h5 {
 }
 
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   -webkit-box-shadow: 0 0 10px #faf9f7;
           box-shadow: 0 0 10px #faf9f7;
@@ -807,6 +823,7 @@ main {
 article {
   border-radius: 15px;
   margin-bottom: 20px;
+  background-color: #353e4e;
 }
 
 .main-styles {
@@ -816,6 +833,7 @@ article {
 .main-styles h2 {
   text-shadow: 0 0 5px #0dcaf0;
   letter-spacing: 3px;
+  margin-top: 0;
 }
 
 .main-styles h2,

@@ -15,20 +15,23 @@
 .about_wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .about__left {
-  max-width: 50%;
+  max-width: 35%;
 }
 
 .about__right {
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .about__content {
   line-height: 30px;
 }
-
+#about__code {
+  padding: 10px 20px;
+}
 .about__links {
   a {
     color: $colorLinks;
