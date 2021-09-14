@@ -1,0 +1,51 @@
+/* ======================================  CONTACTS  ========================================== */
+#contacts {
+  background-color: $backHead;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: space-around;
+}
+
+.contacts__links {
+  display: flex;
+  color: $colorLinks;
+}
+
+.contacts__title {
+  text-align: center;
+  text-shadow: 0 0 5px $textMain;
+  letter-spacing: 3px;
+}
+
+.contacts__align-img {
+  padding-left: 5px;
+}
+
+.contacts__info {
+  margin-left: 20px;
+  a {
+    &:hover {
+      text-shadow: 0 0 15px white;
+    }
+  }
+}
+
+.contacts-align {
+  position: relative;
+  bottom: 20px;
+}
+
+.contacts-img_styles {
+  img {
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+/*=======================================  FONTS  ====================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/*=======================================  CONSTANTS  ================================================*/
+@import "constants";
+
+/*=======================================  IMPORT SCSS  ==============================================*/
+@import "header";
+@import "skills";
+@import "projects";
+@import "about";
+@import "hobbies";
+@import "contacts";
+@import "footer";
+@import "media-queries";
+
+/* ======================================  DEFAULT STYLES  ========================================== */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: $textMain;
+    background: url(../images/back.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    user-select: none;
+}
+
+a {
+    color: $textMain;
+    text-decoration: none;
+}
+
+ul,
+ul li {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    letter-spacing: 2px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #faf9f7;
+    box-shadow: 0 0 20px #40cee4;
+}
+
+.header__info-wrapper,
+main {
+    padding: 20px;
+}
+
+#main {
+    background-color: $backMain;
+}
+
+article {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.main-styles {
+    padding: 20px;
+}
+.main-styles h2 {
+    text-shadow: 0 0 5px $textMain;
+    letter-spacing: 3px;
+}
+
+.main-styles h2,
+.main-styles h3 {
+    color: $textMain;
+}
+
+.main-styles h3 {
+    font-size: 18px;
+}
+
+.main-styles p {
+    color: #dbebfa;
+    border-bottom: 1px solid #6f7b86;
+    min-width: 47%;
+}

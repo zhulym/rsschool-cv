@@ -1,0 +1,50 @@
+/* ======================================  PROJECTS  ========================================== */
+.projects-title {
+  margin: 10px auto;
+  text-align: center;
+  text-shadow: 0 0 5px $textMain;
+  color: $textMain;
+}
+#projects {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+.projects-elements {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+  background-color: $backHead;
+  padding: 20px 20px;
+  border-radius: 7px;
+}
+
+.projects-item {
+  width: 29%;
+  border: 7px solid white;
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    cursor: pointer;
+    border: 7px solid $textMain;
+    box-shadow: 0 0 15px $textMain;
+    transform: scale(1.01);
+  }
+}
+
+.projects-image {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.projects-description {
+  background-color: black;
+  text-align: center;
+  padding: 3px;
+  margin: 0;
+}

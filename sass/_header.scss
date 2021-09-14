@@ -1,0 +1,108 @@
+/* ======================================  HEADER  ========================================== */
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 0 0 15px #fff;
+  padding-left: 20px;
+  z-index: 5;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 10;
+  background-color: hsla(218, 19%, 26%, 0.9);
+}
+.header::after {
+  content: "";
+  width: calc(100% - 40px);
+  margin: 10px auto;
+  border-top: 1px solid rgb(133, 133, 133);
+  display: block;
+}
+
+.header__menu {
+  text-shadow: 0 0 15px #fff;
+  padding-top: 40px;
+  padding-right: 20px;
+  ul {
+    display: flex;
+    gap: 15px;
+    li {
+      position: relative;
+      a {
+        font-family: Helvetica, arial, serif;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+          inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+          inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        transition: all 0.3s ease 0s;
+        position: relative;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+
+#header__info-wrapper {
+  background-color: $backHead;
+  display: flex;
+  padding: 130px 20px 20px 20px;
+}
+
+.header__avatar {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  img {
+    border-radius: 30px;
+  }
+}
+
+.header__info {
+  margin: 0 auto;
+  width: 70%;
+  h1 {
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 0 0 15px white;
+  }
+  h2 {
+    text-align: center;
+    margin: 5px 0 0 0;
+    text-shadow: 0 0 5px $textMain;
+    letter-spacing: 3px;
+    color: $textMain;
+  }
+}
+
+.header__info-position {
+  background-color: $backMain;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.header__active {
+  background-color: blueviolet;
+}

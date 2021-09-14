@@ -1,0 +1,15 @@
+/* ======================================  HOBBIES  ========================================== */
+.hobbies__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.hobbies__title {
+  text-align: center;
+}
+.hobbies__item {
+  border: 3px solid $textMain;
+  border-radius: 3px;
+  padding: 20px 70px;
+}

@@ -1,0 +1,241 @@
+/* ======================================  Media Queries  ========================================== */
+@media only screen and (max-width: 991px) {
+  .header,
+  .header__info-wrapper,
+  .main,
+  .footer {
+    width: 740px;
+    margin: 0 auto;
+  }
+
+  .header__menu {
+    ul {
+      gap: 5px;
+      li {
+        a {
+          padding: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .info-skills__content {
+    width: 45%;
+  }
+  .projects-item {
+    width: 46%;
+  }
+  .contacts-img_styles {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header,
+  .header__info-wrapper,
+  .main,
+  .footer {
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .header__menu {
+    ul {
+      gap: 5px;
+      li {
+        a {
+          padding: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .projects-item {
+    width: 44%;
+  }
+  // ====== Burger ========== //
+  .burger__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    width: 30px;
+    height: 18px;
+    user-select: none;
+    cursor: pointer;
+    &::before,
+    &::after,
+    span {
+      user-select: none;
+      left: 0px;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: $textMain;
+      box-shadow: 0 0 15px $textMain;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      user-select: none;
+    }
+
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+    }
+  }
+  .burger__icon.menu__active {
+    left: -20px;
+    span {
+      transform: scale(0) translate(0px, -50%);
+    }
+    &::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+    }
+    &::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+    }
+  }
+
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: -250%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 100px 0;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+    ul {
+      flex-direction: column;
+    }
+    li {
+      margin-bottom: 40px;
+      font-size: 22px;
+      a {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 110px;
+      background-color: rgba(34, 34, 34, 0.8);
+      z-index: 2;
+    }
+  }
+
+  .menu__active {
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #header__info-wrapper {
+    flex-direction: column;
+  }
+
+  .header__avatar {
+    justify-content: center;
+  }
+
+  .info-skills__content {
+    width: 100%;
+    img {
+      margin-left: 30%;
+      padding-right: 15px;
+    }
+  }
+  .projects-item {
+    width: 46%;
+  }
+  .contacts-img_styles {
+    width: 40%;
+  }
+
+  .header__menu ul li a {
+    padding: 25px;
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .info-skills_styles {
+    li {
+      font-size: 32px;
+      img {
+        margin-left: 0%;
+      }
+    }
+  }
+  .info-skills_styles li img {
+    margin-left: 30%;
+  }
+
+  .header__info-position {
+    font-size: 24px;
+  }
+  .projects-item {
+    width: 100%;
+  }
+  .hobbies__item {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+  }
+  .projects-description {
+    font-size: 32px;
+  }
+  .about_wrapper {
+    flex-direction: column;
+    font-size: 32px;
+  }
+  .about__left {
+    max-width: 100%;
+  }
+
+  .about__right {
+    max-width: 100%;
+  }
+  .contacts__info {
+    font-size: 32px;
+  }
+  .contacts__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacts-img_styles {
+    width: 100%;
+    align-self: center;
+  }
+  .footer__github-link a {
+    font-size: 32px;
+  }
+  .footer__rs-link {
+    display: block;
+  }
+}

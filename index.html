@@ -5,81 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML, CSS & Git Basics</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>CV Zhulym</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <header id="header">
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="header__logo">
+                <h3><a href="https://www.linkedin.com/in/sergey-zhulym/">Zhulym Sergey</a></h3>
+            </div>
+            <div class="header__container">
+                <div class="burger__icon">
+                    <span></span>
+                </div>
+                <nav class="header__menu" id="header__menu">
+                    <ul class="menu__body">
+                        <li><a class='header__link header__active' href="#header__info-wrapper">HOME</a></li>
+                        <li><a class='header__link' href="#skills">SKILLS</a></li>
+                        <li><a class='header__link' href="#heading_about">ABOUT ME</a></li>
+                        <li><a class='header__link' href="#education">EDUCATION</a></li>
+                        <li><a class='header__link' href="#projects">PROJECTS</a></li>
+                        <li><a class='header__link' href="#hobbies">HOBBIES</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="header__info-wrapper" class="header__info-wrapper">
             <div class="header__avatar">
                 <img src="images/avatar.jpg" alt="avatar">
             </div>
             <div class="header__info">
-                <h1><a href="https://vk.com/llllwolfllll">Zhulym Sergey</a></h1>
+                <h1><a href="https://www.linkedin.com/in/sergey-zhulym/">Zhulym Sergey</a></h1>
                 <div class="header__info-position">JAVASCRIPT FRONTEND DEVELOPER</div>
                 <div class="header__info-skills">
-                    <h2>Skills</h2>
+                    <h2 id="skills">SKILLS</h2>
                     <div class="info-skills__container">
                         <div class="info-skills__content info-skills_styles">
                             <ul>
-                                <li>HTML/CSS</li>
-                                <li>JS</li>
-                                <li>React&Redux</li>
-                                <li>Node JS</li>
+                                <li><img class="skills__img" src="./images/skills/html5.png" alt="html5">HTML5</li>
+                                <li><img class="skills__img" src="./images//skills/css3.png" alt="css3">CSS3</li>
+                                <li><img class="skills__img" src="./images//skills/github.png" alt="ithub">GITHUB</li>
                             </ul>
                         </div>
                         <div class="info-skills__content info-skills_styles">
                             <ul>
-                                <li>SCSS/LESS</li>
-                                <li>Git/Github</li>
-                                <li>Photoshop/Figma</li>
-                                <li>Webpack/Gulp</li>
-
+                                <li><img class="skills__img" src="./images//skills/js.png" alt="js">JAVASCRIPT</li>
+                                <li><img class="skills__img" src="./images//skills/boot.png" alt="boot">Bootstrap</li>
+                                <li><img class="skills__img" src="./images//skills/sass.png" alt="sass">SASS</li>
                             </ul>
                         </div>
                         <div class="info-skills__content info-skills_styles">
                             <ul>
-                                <li>React Native</li>
-                                <li>Bootstrap5</li>
-                                <li>Flex/Grid</li>
-                                <li>MySQL</li>
+                                <li><img class="skills__img" src="./images//skills/react.png" alt="react">REACT</li>
+                                <li><img class="skills__img" src="./images//skills/redux.png" alt="redux">REDUX</li>
+                                <li><img class="skills__img" src="./images//skills/webpack.png" alt="webpack">Webpack
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-skills__content info-skills_styles">
+                            <ul>
+                                <li><img class="skills__img" src="./images//skills/node.png" alt="node">NODE JS</li>
+                                <li><img class="skills__img" src="./images//skills/ts.png" alt="ts">TypeScript</li>
+                                <li><img class="skills__img" src="./images//skills/sql.png" alt="sql">MySQL</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main id="main">
+        <main id="main" class="main">
+
             <article id="contacts">
-                <h2>CONTACTS</h2>
-                <div class="contacts__phone contacts-img_styles">
-                    <span><img src="images/phone.png" alt="phone"></span>
-                    <span class="contacts__info contacts-align">+375(29)203-78-07</span>
-                </div>
-                <div class="contacts__email contacts-img_styles">
-                    <span><img src="images/email.png" alt="email"></span>
-                    <span class="contacts__info contacts-align">Zhulym@mail.ru</span>
-                </div>
-                <div class="contacts__links contacts-img_styles">
-                    <div><img src="images/links.png" alt="links"></div>
-                    <div class="contacts__info">
-                        <ul>
-                            <li><a href="https://vk.com/llllwolfllll">VK</a></li>
-                            <li><a href="https://www.linkedin.com/in/sergey-zhulym/">Linkedin</a></li>
-                            <li><a href="https://github.com/zhulym">Github</a></li>
-                        </ul>
+                <h2 class="contacts__title">CONTACTS</h2>
+                <div class="contacts__container">
+                    <div class="contacts__phone contacts-img_styles">
+                        <span class="contacts__align-img"><img src="images/phone.png" alt="phone"></span>
+                        <span class="contacts__info contacts-align">+375(29)203-78-07</span>
+                    </div>
+                    <div class="contacts__email contacts-img_styles">
+                        <span><img src="images/email.png" alt="email"></span>
+                        <span class="contacts__info contacts-align">Zhulym@mail.ru</span>
+                    </div>
+                    <div class="contacts__links contacts-img_styles">
+                        <div><img src="images/links.png" alt="links"></div>
+                        <div class="contacts__info">
+                            <ul>
+                                <li><a class="contacts__link"
+                                        href="https://www.linkedin.com/in/sergey-zhulym/">Linkedin</a></li>
+                                <li><a class="contacts__link" href="https://vk.com/llllwolfllll">VK</a></li>
+                                <li><a class="contacts__link" href="https://github.com/zhulym">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contacts__location contacts-img_styles">
+                        <span class="contacts__align-img"><img src="images/location.png" alt="location"></span>
+                        <span class="contacts__info contacts-align">Minsk</span>
                     </div>
                 </div>
-                <div class="contacts__location contacts-img_styles">
-                    <span><img src="images/location.png" alt="location"></span>
-                    <span class="contacts__info contacts-align">Minsk</span>
-                </div>
+
             </article>
 
             <section id="about">
-                <h2 class="heading_about">ABOUT</h2>
+                <h2 class="heading_about" id="heading_about">ABOUT</h2>
                 <div class="about_wrapper">
                     <div class="about__left">
 
@@ -106,7 +139,7 @@
                         </article>
 
                         <article id="education" class="main-styles">
-                            <h2>EDUCATION</h2>
+                            <h2 id="education__heading">EDUCATION</h2>
                             <div class="education__container">
                                 <div class="education__item">
                                     <h3>Brest State Technical University</h3>
@@ -115,7 +148,7 @@
                                 </div>
 
                                 <div class="education__item">
-                                    <h3>IT Step</h3>
+                                    <h3>IT Step Academy</h3>
                                     <p>2020-2021</p>
                                     <p>Frontend(REACT)developer</p>
                                 </div>
@@ -140,17 +173,19 @@
                             <h2>ABOUT ME</h2>
                             <div class="about_container">
                                 <p class="about__content"> I am Sergey Zhulym, graduated from full-time studies at the
-                                    <strong> Brest State Technical
-                                        University</strong> in
+                                    <span class="about__highlite"> Brest State Technical
+                                        University</span> in
                                     2012. For six years I worked as an engineer of industrial and civil construction in
                                     Belarus, Venezuela and Belgium.
                                 </p>
                                 <p class="about__content">
                                     Since 2020, I have been interested and studying frontend development. At the moment,
-                                    I have graduated from the IT Step Academy, Rolling Scopes School and an EnglishPapa
-                                    school (level B1) and I continue to develop in this direction.
+                                    I have graduated from the <span class="about__highlite">IT Step Academy, Rolling
+                                        Scopes School and an
+                                        EnglishPapa
+                                        school</span> (level B1) and I continue to develop in this direction.
                                 </p>
-                                <p class="about__content"><strong>My projects and some links below:</strong></p>
+                                <h5 class="about__content"><strong>My projects and some links below:</strong></h5>
 
                                 <p class="about__links"><a href="https://github.com/zhulym/REACT-PROJECTS">REACT
                                         PROJECTS</a>
@@ -164,50 +199,139 @@
                                         href="https://www.linkedin.com/in/sergey-zhulym/">LINKEDIN</a></p>
 
                             </div>
+                            <h2>CODE EXAMPLE</h2>
+                            <pre class="code_align"><code class="javascript">
+export const sendRequest = async (
+    path,
+    query,
+    method = 'GET',
+    body = {},
+    headers = {},
+) => {
+    const requestUrl = `${baseUrl}/${path}?access_key=${apiKey}${query}`;
+    const options = {
+        method,
+        mode: 'cors',
+        headers: {
+            ...headers,
+        }
+    };
+                            
+    if (method === 'POST' || method === 'PUT') {
+        options.body = JSON.stringify(body);
+    }
+                            
+    const response = await fetch(requestUrl, options);
+                            
+    const contentType = response.headers.get('Content-Type');
+                            
+    if (contentType === 'application/json; Charset=UTF-8') {
+        return await response.json();
+    }
+                            
+    throw new Error('Unexpected content type');
+};
+                        </code></pre>
                         </article>
                     </div>
                 </div>
             </section>
+            <section id="projects">
+                <h2 class="projects-title">SOME OF MY PROJECT</h2>
+                <div class="projects-elements">
+                    <a href="https://zhulym.github.io/image-compressor-app" class="projects-item">
+                        <div class="projects-image">
+                            <img src="./images/projects/compress.png" alt="compress">
+                        </div>
+                        <div class="projects-description">Compressor App</div>
+                        <p class="projects-description">Image Compression Application</p>
+                        <p class="projects-description">(React)</p>
+                    </a>
+                    <a href="https://zhulym.github.io/html-css-projects/nasha-pizza" class="projects-item">
+                        <div class="projects-image">
+                            <img src="./images/projects/nasha-pizza.png" alt="nasha">
+                        </div>
+                        <div class="projects-description">Nasha Pizza Catalog</div>
+                        <p class="projects-description">Catalog landing page for ordering pizza, etc.</p>
+                        <p class="projects-description">(Html, Css, JS)</p>
+                    </a>
+                    <a href="http://zhulym.github.io/posts-app" class="projects-item">
+                        <div class="projects-image">
+                            <img src="./images/projects/posts.png" alt="posts">
+                        </div>
+                        <div class="projects-description">Posts App</div>
+                        <p class="projects-description">An applic. for adding deleting editing posts</p>
+                        <p class="projects-description">(React)</p>
+                    </a>
+                    <a href="https://zhulym.github.io/snap-shot" class="projects-item">
+                        <div class="projects-image">
+                            <img src="./images/projects/snap-shot.png" alt="snap">
+                        </div>
+                        <div class="projects-description">Snap Shot App</div>
+                        <p class="projects-description">An application for searching diff. images</p>
+                        <p class="projects-description">(React)</p>
+                    </a>
+                    <a href="https://zhulym.github.io/todo-app" class="projects-item">
+                        <div class="projects-image">
+                            <img src="./images/projects/todo.png" alt="todo">
+                        </div>
+                        <div class="projects-description">Todo App</div>
+                        <p class="projects-description">An application for compiling a list of tasks</p>
+                        <p class="projects-description">(React)</p>
+                    </a>
+                    <a href="https://zhulym.github.io/html-css-projects/welcom-hi-tech" class="projects-item">
+                        <div class="projects-image">
+                            <img src="./images/projects/welcome.png" alt="welcome">
+                        </div>
+                        <div class="projects-description">Welcome To Hi-Tech</div>
+                        <p class="projects-description">Landing page for welcome yo hi-tech</p>
+                        <p class="projects-description">(Html, Css, JS)</p>
+                    </a>
+                </div>
+            </section>
 
             <article id="hobbies" class="main-styles">
-                <h2>HOBBIES</h2>
+                <h2 class="hobbies__title">HOBBIES</h2>
                 <div class="hobbies__container">
-                    <div class="education__item">
+                    <div class="hobbies__item">
                         <p><img src="images/movies.png" alt="movies"></p>
-                        <p>Movies</p>
+                        <h4>Movies</h4>
                     </div>
 
-                    <div class="education__item">
+                    <div class="hobbies__item">
                         <p><img src="images/music.png" alt="music"></p>
-                        <p>Music</p>
+                        <h4>Music</h4>
                     </div>
 
-                    <div class="education__item">
+                    <div class="hobbies__item">
                         <p><img src="images/games.png" alt="games"></p>
-                        <p>Games</p>
+                        <h4>Games</h4>
                     </div>
 
-                    <div class="education__item">
+                    <div class="hobbies__item">
                         <p><img src="images//books.png" alt="books"></p>
-                        <p>Books</p>
+                        <h4>Books</h4>
                     </div>
                 </div>
             </article>
         </main>
 
-        <footer id="footer">
-            <div class="footer__info-continer">
+        <footer id="footer" class="footer">
+            <div class="footer__info-container">
                 <div class="footer__github-link">
                     <a href="https://github.com/zhulym">Made by zhulym 2021</a>
                 </div>
                 <div class="footer__rs-link">
-                    <span><a href="https://rs.school/"></a></span>
-                    <span class="rs-image"><a href="https://rs.school/"><img src="images/rs.png" alt="rs"></a></span>
+                    <span><a href="https://rs.school/">RS School</a></span>
+                    <span class="rs-image"><a href="https://rs.school/"><img class="rs-image"
+                                src="./images/rs_school_js.svg" alt="rs" /></a></span>
                 </div>
             </div>
         </footer>
 
     </div>
+
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
