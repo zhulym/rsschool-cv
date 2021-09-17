@@ -16,7 +16,8 @@
     <div class="wrapper">
         <header id="header" class="header">
             <div class="header__logo">
-                <h3><a href="https://www.linkedin.com/in/sergey-zhulym/">Zhulym Sergey</a></h3>
+                <h3><a href="https://www.linkedin.com/in/sergey-zhulym/" rel="noopener" target="_blank">Zhulym
+                        Sergey</a></h3>
             </div>
             <div class="header__container">
                 <div class="burger__icon">
@@ -37,10 +38,12 @@
         <section id="header__info-wrapper" class="header__info-wrapper">
             <div class="header__avatar">
                 <img src="images/avatar.jpg" alt="avatar">
-                <a class='header__download' href="./assets/resume/rsschool-cv.pdf">Download Resume</a>
+                <a class='header__download' href="./assets/resume/rsschool-cv.pdf" rel="noopener"
+                    target="_blank">Download Resume</a>
             </div>
             <div class="header__info">
-                <h1><a href="https://www.linkedin.com/in/sergey-zhulym/">Zhulym Sergey</a></h1>
+                <h1><a href="https://www.linkedin.com/in/sergey-zhulym/" rel="noopener" target="_blank">Zhulym
+                        Sergey</a></h1>
                 <div class="header__info-position">JAVASCRIPT FRONTEND DEVELOPER</div>
                 <div class="header__info-skills">
                     <h2 id="skills">SKILLS</h2>
@@ -208,8 +211,8 @@ export const sendRequest = async (
     query,
     method = 'GET',
     body = {},
-    headers = {},
-) => {
+    headers = {}) => {
+
     const requestUrl = `${baseUrl}/${path}?access_key=${apiKey}${query}`;
     const options = {
         method,
@@ -223,10 +226,8 @@ export const sendRequest = async (
         options.body = JSON.stringify(body);
     }
                             
-    const response = await fetch(requestUrl, options);
-                            
-    const contentType = response.headers.get('Content-Type');
-                            
+    const response = await fetch(requestUrl, options);                     
+    const contentType = response.headers.get('Content-Type');                    
     if (contentType === 'application/json; Charset=UTF-8') {
         return await response.json();
     }
@@ -241,7 +242,8 @@ export const sendRequest = async (
             <section id="projects">
                 <h2 class="projects-title">SOME OF MY PROJECT</h2>
                 <div class="projects-elements">
-                    <a href="https://zhulym.github.io/image-compressor-app" class="projects-item">
+                    <a href="https://zhulym.github.io/image-compressor-app" rel="noopener" target="_blank"
+                        class="projects-item">
                         <div class="projects-image">
                             <img src="./images/projects/compress.png" alt="compress">
                         </div>
@@ -249,7 +251,8 @@ export const sendRequest = async (
                         <p class="projects-description">Image Compression Application</p>
                         <p class="projects-description">(React)</p>
                     </a>
-                    <a href="https://zhulym.github.io/html-css-projects/nasha-pizza" class="projects-item">
+                    <a href="https://zhulym.github.io/html-css-projects/nasha-pizza" rel="noopener" target="_blank"
+                        class="projects-item">
                         <div class="projects-image">
                             <img src="./images/projects/nasha-pizza.png" alt="nasha">
                         </div>
@@ -257,7 +260,7 @@ export const sendRequest = async (
                         <p class="projects-description">Catalog landing page for ordering pizza, etc.</p>
                         <p class="projects-description">(Html, Css, JS)</p>
                     </a>
-                    <a href="http://zhulym.github.io/posts-app" class="projects-item">
+                    <a href="http://zhulym.github.io/posts-app" rel="noopener" target="_blank" class="projects-item">
                         <div class="projects-image">
                             <img src="./images/projects/posts.png" alt="posts">
                         </div>
@@ -265,7 +268,7 @@ export const sendRequest = async (
                         <p class="projects-description">An applic. for adding deleting editing posts</p>
                         <p class="projects-description">(React)</p>
                     </a>
-                    <a href="https://zhulym.github.io/snap-shot" class="projects-item">
+                    <a href="https://zhulym.github.io/snap-shot" rel="noopener" target="_blank" class="projects-item">
                         <div class="projects-image">
                             <img src="./images/projects/snap-shot.png" alt="snap">
                         </div>
@@ -273,7 +276,7 @@ export const sendRequest = async (
                         <p class="projects-description">An application for searching diff. images</p>
                         <p class="projects-description">(React)</p>
                     </a>
-                    <a href="https://zhulym.github.io/todo-app" class="projects-item">
+                    <a href="https://zhulym.github.io/todo-app" rel="noopener" target="_blank" class="projects-item">
                         <div class="projects-image">
                             <img src="./images/projects/todo.png" alt="todo">
                         </div>
@@ -281,7 +284,8 @@ export const sendRequest = async (
                         <p class="projects-description">An application for compiling a list of tasks</p>
                         <p class="projects-description">(React)</p>
                     </a>
-                    <a href="https://zhulym.github.io/html-css-projects/welcom-hi-tech" class="projects-item">
+                    <a href="https://zhulym.github.io/html-css-projects/welcom-hi-tech" rel="noopener" target="_blank"
+                        class="projects-item">
                         <div class="projects-image">
                             <img src="./images/projects/welcome.png" alt="welcome">
                         </div>
@@ -292,7 +296,7 @@ export const sendRequest = async (
                 </div>
             </section>
 
-            <section id="hobbies" class="main-styles">
+            <section id="hobbies" class="hobbies">
                 <h2 class="hobbies__title">HOBBIES</h2>
                 <div class="hobbies__container">
                     <div class="hobbies__item">
@@ -321,10 +325,13 @@ export const sendRequest = async (
         <footer id="footer" class="footer">
             <div class="footer__info-container">
                 <div class="footer__github-link">
-                    <a href="https://github.com/zhulym">Github(zhulym)</a>
+                    <a href="https://github.com/zhulym" rel="noopener" target="_blank">
+                        <img src="./images/git.png" alt="git">
+                        Github(zhulym)
+                    </a>
                 </div>
                 <div class="footer__rs-link">
-                    <span><a href="https://rs.school/">RS School</a></span>
+                    <span><a href="https://rs.school/" rel="noopener" target="_blank">RS School</a></span>
                     <span class="rs-image"><a href="https://rs.school/"><img class="rs-image"
                                 src="./images/rs_school_js.svg" alt="rs" /></a></span>
                 </div>
