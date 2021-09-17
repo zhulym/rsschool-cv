@@ -177,9 +177,9 @@
 
 /* ======================================  SKILLS  ========================================== */
 #skills {
-  padding-top: 130px;
+  padding-top: 100px;
   padding-bottom: 10px;
-  margin-top: -110px;
+  margin-top: -70px;
 }
 
 .info-skills__container {
@@ -233,8 +233,8 @@
 }
 
 #projects {
-  padding-top: 120px;
-  margin-top: -120px;
+  padding-top: 90px;
+  margin-top: -90px;
 }
 
 .projects-elements {
@@ -293,6 +293,7 @@
 #education {
   padding-top: 120px;
   margin-top: -120px;
+  padding-bottom: 103px;
 }
 
 .heading_about {
@@ -344,6 +345,10 @@
   color: red;
 }
 
+#about__code {
+  padding-top: 1px;
+}
+
 .about__highlite {
   font-weight: 600;
   color: #8b68dd;
@@ -353,6 +358,10 @@
   font-size: 12px;
   border-radius: 7px;
   background-color: #414753;
+}
+
+pre code.hljs {
+  padding: 0px 5px;
 }
 
 /* ======================================  HOBBIES  ========================================== */
@@ -408,6 +417,8 @@
   text-align: center;
   text-shadow: 0 0 5px #0dcaf0;
   letter-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .contacts__align-img {
@@ -461,6 +472,11 @@ footer a {
 
 footer a:hover {
   text-shadow: 0 0 0;
+}
+
+.footer__github-link a img {
+  position: relative;
+  top: 17px;
 }
 
 .footer__rs-link {
@@ -800,6 +816,8 @@ h4 {
 
 h5 {
   font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .wrapper {

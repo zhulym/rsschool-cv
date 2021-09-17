@@ -22,6 +22,14 @@ footer {
     }
   }
 }
+.footer__github-link {
+  a {
+    img {
+      position: relative;
+      top: 17px;
+    }
+  }
+}
 .footer__rs-link {
   display: flex;
   gap: 10px;

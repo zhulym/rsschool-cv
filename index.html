@@ -211,8 +211,8 @@ export const sendRequest = async (
     query,
     method = 'GET',
     body = {},
-    headers = {},
-) => {
+    headers = {}) => {
+
     const requestUrl = `${baseUrl}/${path}?access_key=${apiKey}${query}`;
     const options = {
         method,
@@ -226,10 +226,8 @@ export const sendRequest = async (
         options.body = JSON.stringify(body);
     }
                             
-    const response = await fetch(requestUrl, options);
-                            
-    const contentType = response.headers.get('Content-Type');
-                            
+    const response = await fetch(requestUrl, options);                     
+    const contentType = response.headers.get('Content-Type');                    
     if (contentType === 'application/json; Charset=UTF-8') {
         return await response.json();
     }
@@ -327,7 +325,10 @@ export const sendRequest = async (
         <footer id="footer" class="footer">
             <div class="footer__info-container">
                 <div class="footer__github-link">
-                    <a href="https://github.com/zhulym" rel="noopener" target="_blank">Github(zhulym)</a>
+                    <a href="https://github.com/zhulym" rel="noopener" target="_blank">
+                        <img src="./images/git.png" alt="git">
+                        Github(zhulym)
+                    </a>
                 </div>
                 <div class="footer__rs-link">
                     <span><a href="https://rs.school/" rel="noopener" target="_blank">RS School</a></span>

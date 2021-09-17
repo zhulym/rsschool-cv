@@ -2,7 +2,7 @@
 #education {
   padding-top: 120px;
   margin-top: -120px;
-  padding-bottom: 190px;
+  padding-bottom: 103px;
 }
 
 .heading_about {
@@ -48,6 +48,10 @@
   }
 }
 
+#about__code {
+  padding-top: 1px;
+}
+
 .about__highlite {
   font-weight: 600;
   color: $colorLinks;
@@ -57,4 +61,8 @@
   font-size: 12px;
   border-radius: 7px;
   background-color: #414753;
+}
+
+pre code.hljs {
+  padding: 0px 5px;
 }
