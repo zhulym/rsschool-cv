@@ -1,21 +1,37 @@
 /* ======================================  Media Queries  ========================================== */
 @media only screen and (max-width: 1024px) {
-  .header,
+  .header {
+    max-width: 1010px;
+    width: 100%;
+  }
+
   .header__info-wrapper,
   .main,
-  .footer {
-    width: 970px;
+  .footer,
+  section,
+  .wrapper {
+    max-width: 970px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .header,
+  .header__menu::before {
+    width: 100%;
+  }
+  .header {
+    max-width: 780px;
+    width: 100%;
+  }
+
   .header__info-wrapper,
   .main,
-  .footer {
-    width: 740px;
-    margin: 0 auto;
+  .footer,
+  section,
+  .wrapper {
+    max-width: 740px;
+    width: 100%;
   }
 
   .header__menu {
@@ -42,12 +58,22 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .header,
+  .header {
+    max-width: 600px;
+    width: 100%;
+  }
+  .header__menu::before {
+    background-color: transparent !important;
+    width: 100%;
+  }
+
   .header__info-wrapper,
   .main,
-  .footer {
-    width: 560px;
-    margin: 0 auto;
+  .footer,
+  section,
+  .wrapper {
+    max-width: 560px;
+    width: 100%;
   }
   .about__left {
     max-width: 45%;
@@ -170,12 +196,25 @@
 }
 
 @media only screen and (max-width: 575px) {
+  .header__menu::before {
+    background-color: transparent;
+    width: 100%;
+  }
+  .header,
+  .header__info-wrapper,
+  .main,
+  .footer,
+  section,
+  .wrapper {
+    width: 100%;
+  }
   #header__info-wrapper {
     flex-direction: column;
   }
 
   .header__avatar {
     justify-content: center;
+    margin-right: 0;
   }
 
   .info-skills__content {
@@ -189,32 +228,41 @@
     width: 46%;
   }
   .contacts-img_styles {
-    width: 40%;
+    img {
+      display: none;
+    }
+  }
+  .contacts__title {
+    margin-bottom: 10px;
+  }
+  .contacts__info {
+    display: block;
+  }
+  #contacts {
+    padding: 0;
   }
 
   .header__menu ul li a {
     padding: 25px;
-    font-size: 32px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .info-skills_styles {
     li {
-      font-size: 32px;
       img {
         margin-left: 0%;
       }
     }
   }
   .info-skills_styles li img {
-    margin-left: 30%;
+    margin-left: 0;
   }
 
   .header__info-position {
-    font-size: 24px;
+    font-size: 18px;
   }
   .projects-item {
     width: 100%;
@@ -222,14 +270,10 @@
   .hobbies__item {
     width: 100%;
     text-align: center;
-    font-size: 32px;
   }
-  .projects-description {
-    font-size: 32px;
-  }
+
   .about_wrapper {
     flex-direction: column;
-    font-size: 32px;
   }
   .about__left {
     max-width: 100%;
@@ -238,9 +282,7 @@
   .about__right {
     max-width: 100%;
   }
-  .contacts__info {
-    font-size: 32px;
-  }
+
   .contacts__container {
     flex-direction: column;
     justify-content: center;
@@ -249,10 +291,35 @@
     width: 100%;
     align-self: center;
   }
+  .footer__github-link {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .footer__github-link a {
-    font-size: 32px;
+    font-size: 20px;
+    text-align: center;
   }
   .footer__rs-link {
-    display: block;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  // .header {
+  //   max-width: 320px;
+  //   width: 100%;
+  //   background-color: transparent;
+  // }
+
+  .header__menu::before {
+    background-color: transparent;
+    width: 100%;
   }
 }
