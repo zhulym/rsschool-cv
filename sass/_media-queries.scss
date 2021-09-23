@@ -97,6 +97,7 @@
   .projects-item {
     width: 44%;
   }
+
   // ====== Burger ========== //
   .burger__icon {
     z-index: 5;
@@ -212,9 +213,25 @@
     flex-direction: column;
   }
 
+  .info-skills_styles {
+    li {
+      display: flex;
+      align-items: center;
+      padding: 3px 10px 3px 10px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 3px;
+      background-color: $backMain;
+      font-size: 18px;
+    }
+  }
+
   .header__avatar {
     justify-content: center;
     margin-right: 0;
+  }
+  .header__info {
+    width: 100%;
   }
 
   .info-skills__content {
@@ -312,12 +329,6 @@
 }
 
 @media only screen and (max-width: 420px) {
-  // .header {
-  //   max-width: 320px;
-  //   width: 100%;
-  //   background-color: transparent;
-  // }
-
   .header__menu::before {
     background-color: transparent;
     width: 100%;
