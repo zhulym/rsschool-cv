@@ -1,4 +1,4 @@
-## Zhulym Sergey || Junior Frontend Developer
+## Zhulym Sergey || Middle Frontend React Developer
 
 ---
 
@@ -8,10 +8,11 @@
 
 #### My contacts:
 
-- Minsk
-- Tel: +375(29)203-78-07
+- Minsk / Moskow
+- Tel: +375(29)203-78-07, +7(926)406-21-51
 - Email: zhulym@mail.ru
 - [Linkedin](https://www.linkedin.com/in/sergey-zhulym/)
+- Telegram: @zhulym
 
 #
 
@@ -19,23 +20,22 @@
 
 _Here are the skills that already exist and are still learning. And which I also want to study._
 
-**HTML/CSS | JS | React&Redux | Node JS | Bootstrap5 | Flex/Grid | SCSS/Less | Git/Github | Photoshop/Figma | React Native | Webpack/Gulp**
+**HTML/CSS | JS | React | Redux-Toolkit | MobX | Material UI | Flex/Grid | SCSS/LESS | Git/Github/Gitlab/Azure | Coveo/Headless | Photoshop/Figma | React Native | Webpack/Gulp**
 
 #
 
 #### My English:
 
-Middle between pre-intermediate and intermediate (A2+ --- B1)
+Intermediate (B1)
 
 #
 
 #### My Experience:
 
-| Year      | Position       | Company                       |
-| --------- | -------------- | ----------------------------- |
-| 2018-2020 | Team Leader    | Dekkers (Belgium)             |
-| 2014-2015 | Civil Engineer | Belzarubezhstroy (Venesuela)  |
-| 2012-2014 | Civil Engineer | Building trust #3 (Soligorsk) |
+| Year      | Position                  | Company                       |
+| --------- | ------------------------- | ----------------------------- |
+| 2023-2024 | Frontend React Developer  | S7 Airlines                   |
+| 2021-2023 | Frontend React Developer  | SaM Solutions                 |
 
 #
 
@@ -45,4 +45,3 @@ Middle between pre-intermediate and intermediate (A2+ --- B1)
 - Sport
 - Books
 - Studying
-- Video games
