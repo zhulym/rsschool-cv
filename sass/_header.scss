@@ -6,6 +6,7 @@
   padding-left: 20px;
   z-index: 5;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -19,6 +20,7 @@
   z-index: 10;
   background-color: hsla(218, 19%, 26%, 0.9);
 }
+
 .header::after {
   content: "";
   width: calc(100% - 40px);
@@ -27,6 +29,7 @@
   border-top: 1px solid rgb(133, 133, 133);
   display: block;
 }
+
 .header__container {
   display: flex;
   align-items: center;
@@ -35,11 +38,14 @@
 .header__menu {
   text-shadow: 0 0 15px #fff;
   padding-right: 20px;
+
   ul {
     display: flex;
     gap: 15px;
+
     li {
       position: relative;
+
       a {
         @include mainButton();
       }
@@ -58,6 +64,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
   img {
     border-radius: 30px;
   }
@@ -66,12 +73,14 @@
 .header__info {
   margin: 0 auto;
   width: 70%;
+
   h1 {
     margin: 0 0 5px 0;
     text-align: center;
     font-size: 36px;
     text-shadow: 0 0 15px white;
   }
+
   h2 {
     text-align: center;
     margin: 5px 0 0 0;
