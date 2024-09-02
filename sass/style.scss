@@ -24,6 +24,7 @@ body {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 html {
     width: 100%;
     max-width: 100%;
@@ -59,6 +60,7 @@ ul li {
     margin: 0;
     padding: 0;
 }
+
 h4 {
     letter-spacing: 2px;
 }
@@ -95,6 +97,7 @@ article {
 .main-styles {
     padding: 20px;
 }
+
 .main-styles h2 {
     text-shadow: 0 0 5px $textMain;
     letter-spacing: 3px;

@@ -67,5 +67,12 @@ pre code.hljs {
 }
 
 .certific {
+  display: inline-block;
   width: 49%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(2);
+    border-radius: 15px;
+  }
 }
